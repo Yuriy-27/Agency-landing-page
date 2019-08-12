@@ -12,7 +12,7 @@ header{
         display: flex;
     
         nav {
-            background: #313030;
+            background:black;
             display: flex;
             justify-content: center;
             width: 100%;
@@ -21,7 +21,13 @@ header{
                 width: 50px;
                 height: 50px;
                 background: #ff3f40;
+                
                 display: none;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    
+                }
             }
             .active ~ a{
                 display: block;
@@ -90,11 +96,13 @@ header{
         }
     }
 }
-main{
+
+main {
     background: #fff;
     margin-top: 4em;
     padding: 0;
     margin: 0;
+    
     .container{
         max-width: 1200px;
         margin: 0 auto;
@@ -329,7 +337,6 @@ main{
             width: 100%;
             margin-bottom: 2em;
             
-            
             .left_top{
                 width: 100%;
                 h3{
@@ -422,10 +429,6 @@ main{
                 }
             }
         }
-
-
-
-
     }
     .subscribe{
         width: 100%;
@@ -478,50 +481,43 @@ main{
             }
         }
     }
-    footer{
-        width: 100%;
-        height: 100px;
-        background: #292929;
-        margin-top: 4em;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #292929;
+    margin-top: 4em;
         
-        div{
-            max-width: 1200px;
-            height: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            .rights{
-                width: 50%;
-                margin: 0;
-                p{
-                    color:#cdcdcd;
-                    margin-top: 40px;
-                }
+    .container{
+        max-width: 1200px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        .rights{
+            width: 50%;
+            margin: 0;
+            p{
+                color:#cdcdcd;
+                margin-top: 40px;
             }
-            .images{
-                width: 50%;
+        }
+        .images{
+            width: 50%;
+            margin: 0;
+            .links{
+                width: 35%;
                 margin: 0;
-                .links{
-                    width: 35%;
-                    margin: 0;
-                    margin-left: 65%;
-                    a{
-                        margin-top: 35px;
-                        margin-left: 9%;
-                    }
-
+                margin-left: 65%;
+                a{
+                    margin-top: 35px;
+                    margin-left: 9%;
                 }
-                
-                
-
             }
         }
     }
-    
-
-    
-
 }
+
 
 @media (max-width: 1050px) {
 //     header {
@@ -582,6 +578,9 @@ main{
         .block_left{
             h1 {
                 font-size: 1.5em;
+                span{
+                    letter-spacing: 2px;
+                }
             }
             p{
                 font-size: 0.7em;
@@ -589,6 +588,7 @@ main{
             button{
                 margin-bottom: 5em;
                 height: 3em;
+                font-size: 10px;
             }
         }
         .block_right{
@@ -597,6 +597,91 @@ main{
                 margin-top: 1em;
                 img{
                     margin-top: 5em;
+                }
+            }
+        }
+    }
+    main{
+        
+        .container{
+            .side_left{
+                padding-bottom: 1.5em;
+                margin-top: 2.5em;
+                h2{
+                    font-size: 1.5em;
+                }
+                p{
+                    font-size: 0.7em;
+                }
+                button{
+                    height: 3em;
+                    font-size: 10px;
+                }
+            }
+            .side_right{
+                padding-bottom: 1.5em;
+                margin-top: 2.5em;
+                .first{
+                    .left{
+                        p{
+                            font-size: 0.7em;
+                        }
+                        h3{
+                            font-size: 1em;
+                        }
+                    }
+                    .right{
+                        p{
+                            font-size: 0.7em;
+                        }
+                        h3{
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .second{
+                    .left{
+                        p{
+                            font-size: 0.7em;
+                        }
+                        h3{
+                            font-size: 1em;
+                        }
+                    }
+                    .right{
+                        p{
+                            font-size: 0.7em;
+                        }
+                        h3{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+            .info{
+                .contact-info{
+                    p{
+                        font-size: small;
+                    }
+                }
+            }
+        }
+        .subscribe{
+        
+            h3{
+                font-size: 30px;
+            }
+            
+            p{
+                font-size: 15px;
+
+            }
+            .to_subscribe{
+                button{
+                    font-size: 6px;
+                }
+                input::placeholder{
+                    font-size: 10px;
                 }
             }
         }

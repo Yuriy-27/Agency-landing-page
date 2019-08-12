@@ -9,7 +9,7 @@ header {
     margin: 0 auto;
     display: flex; }
     header .container nav {
-      background: #313030;
+      background: black;
       display: flex;
       justify-content: center;
       width: 100%; }
@@ -18,6 +18,9 @@ header {
         height: 50px;
         background: #ff3f40;
         display: none; }
+        header .container nav .mobile img {
+          width: 50px;
+          height: 50px; }
       header .container nav .active ~ a {
         display: block; }
       header .container nav a {
@@ -365,33 +368,34 @@ main {
         text-transform: uppercase;
         font-weight: bold;
         letter-spacing: 2px; }
-  main footer {
-    width: 100%;
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: #292929;
+  margin-top: 4em; }
+  footer .container {
+    max-width: 1200px;
     height: 100px;
-    background: #292929;
-    margin-top: 4em; }
-    main footer div {
-      max-width: 1200px;
-      height: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex; }
-      main footer div .rights {
-        width: 50%;
-        margin: 0; }
-        main footer div .rights p {
-          color: #cdcdcd;
-          margin-top: 40px; }
-      main footer div .images {
-        width: 50%;
-        margin: 0; }
-        main footer div .images .links {
-          width: 35%;
-          margin: 0;
-          margin-left: 65%; }
-          main footer div .images .links a {
-            margin-top: 35px;
-            margin-left: 9%; }
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; }
+    footer .container .rights {
+      width: 50%;
+      margin: 0; }
+      footer .container .rights p {
+        color: #cdcdcd;
+        margin-top: 40px; }
+    footer .container .images {
+      width: 50%;
+      margin: 0; }
+      footer .container .images .links {
+        width: 35%;
+        margin: 0;
+        margin-left: 65%; }
+        footer .container .images .links a {
+          margin-top: 35px;
+          margin-left: 9%; }
 
 @media (max-width: 768px) {
   header .container nav {
@@ -403,13 +407,55 @@ main {
       display: none; }
   header .block_left h1 {
     font-size: 1.5em; }
+    header .block_left h1 span {
+      letter-spacing: 2px; }
   header .block_left p {
     font-size: 0.7em; }
   header .block_left button {
     margin-bottom: 5em;
-    height: 3em; }
+    height: 3em;
+    font-size: 10px; }
   header .block_right .video {
     height: 14em;
     margin-top: 1em; }
     header .block_right .video img {
-      margin-top: 5em; } }
+      margin-top: 5em; }
+  main .container .side_left {
+    padding-bottom: 1.5em;
+    margin-top: 2.5em; }
+    main .container .side_left h2 {
+      font-size: 1.5em; }
+    main .container .side_left p {
+      font-size: 0.7em; }
+    main .container .side_left button {
+      height: 3em;
+      font-size: 10px; }
+  main .container .side_right {
+    padding-bottom: 1.5em;
+    margin-top: 2.5em; }
+    main .container .side_right .first .left p {
+      font-size: 0.7em; }
+    main .container .side_right .first .left h3 {
+      font-size: 1em; }
+    main .container .side_right .first .right p {
+      font-size: 0.7em; }
+    main .container .side_right .first .right h3 {
+      font-size: 1em; }
+    main .container .side_right .second .left p {
+      font-size: 0.7em; }
+    main .container .side_right .second .left h3 {
+      font-size: 1em; }
+    main .container .side_right .second .right p {
+      font-size: 0.7em; }
+    main .container .side_right .second .right h3 {
+      font-size: 1em; }
+  main .container .info .contact-info p {
+    font-size: small; }
+  main .subscribe h3 {
+    font-size: 30px; }
+  main .subscribe p {
+    font-size: 15px; }
+  main .subscribe .to_subscribe button {
+    font-size: 6px; }
+  main .subscribe .to_subscribe input::placeholder {
+    font-size: 10px; } }
