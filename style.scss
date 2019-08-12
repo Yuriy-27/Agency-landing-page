@@ -232,7 +232,7 @@ main {
             }
             .pictures{
                 text-align: center;
-                width: 100%;
+                width: 100%; 
                 
                 div{
                     width: 23%;
@@ -243,7 +243,6 @@ main {
                 }
             }
         }
-        
         .team{
             width: 100%;
             
@@ -363,9 +362,7 @@ main {
                 justify-content: space-between;
                 .message{
                     width: 60%;
-                    
                     form{
-                       
                         input{
                             width: 45%;
                             float: left;
@@ -486,8 +483,7 @@ footer{
     width: 100%;
     height: 100px;
     background: #292929;
-    margin-top: 4em;
-        
+    margin-top: 4em;   
     .container{
         max-width: 1200px;
         height: 100px;
@@ -509,9 +505,17 @@ footer{
                 width: 35%;
                 margin: 0;
                 margin-left: 65%;
-                a{
-                    margin-top: 35px;
-                    margin-left: 9%;
+                a{ 
+                    img{
+                        margin-top: 30px;
+                        width: 30px;
+                        height: 30px;
+                        margin-left: 9%;
+                        border-radius: 20px;
+                        &:hover{
+                            background: #ff3f40;
+                        }
+                    }
                 }
             }
         }
@@ -602,7 +606,6 @@ footer{
         }
     }
     main{
-        
         .container{
             .side_left{
                 padding-bottom: 1.5em;
@@ -658,30 +661,242 @@ footer{
                     }
                 }
             }
-            .info{
-                .contact-info{
+            .products{
+                .header{
+                    h3{
+                        font-size: 1.5em;
+                    }
                     p{
-                        font-size: small;
+                        font-size: 0.7em;
+                    }
+                }
+                nav{
+                    margin-top: 1.5em;
+                    a{
+                        padding: 9px 15px;
+                        font-size: 0.7em;
+                    }
+                }
+                .pictures{
+                    text-align: center;
+                    width: 100%;
+                    div{
+                        height: 250px;
                     }
                 }
             }
+            .team{
+                .left-top{
+                    h3{
+                        font-size: 1.5em;
+                        margin-bottom: 10px;
+                        margin-top: 30px;
+                        margin-left: -5px;
+                    }
+                    p{
+                        width: 35%;
+                        margin-bottom: 15px;
+                        font-size: 0.7em;
+                    }
+                    .line{
+                        width: 11%;
+                        height: 2px;
+                        background: #ff3f40;
+                    }
+                }
+                .main{
+                    width: 100%;
+                    margin-top: 2em;
+                    display: flex;
+                    justify-content: space-between;
+                    .left-bottom{
+                        width: 25%;
+                        background: #f5f1de;
+                    }
+                    .right-bottom{
+                        width: 70%;
+                        h4{
+                            text-transform: uppercase;
+                            font-size: 1.5em;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                        }
+                        p{
+                            width: 75%;
+                            font-size: 0.7em;
+                        }
+                        nav{
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                            a{
+                                padding-right: 1em;
+                                font-size: normal;
+                            }
+                        }
+                        
+                        .pictures{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 3.5em;
+                            div{
+                                width: 23%;
+                                height: 180px;
+                                background: #f5f1de;
+                            }
+                            .first{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                .text{
+                                    width: 100%;
+                                    height: 30px;
+                                    background:#7b796e;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    vertical-align: middle;
+                                    p{
+                                        text-align: center;
+                                        width: 100%;
+                                        margin: 0 auto;
+                                        margin-top: 5px;
+                                    }  
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+            .info{
+                width: 100%;
+                margin-bottom: 1em;
+                
+                .left_top{
+                    width: 100%;
+                    h3{
+                        text-transform: uppercase;
+                        font-size: 1.5em;
+                        margin-bottom: 10px;
+                        margin-top: 1em;   
+                    }
+                    p{
+                        width: 60%;
+                        margin-bottom: 1.5em;
+                        letter-spacing: 1px;
+                        font-size: 0.7em;
+                    }
+                    div{ 
+                        width: 11%;
+                        height: 2px;
+                        background: #ff3f40;
+                    }
+                }
+                .main-info{
+                    width: 100%;
+                    margin-top: 4em;
+                    display: flex;
+                    justify-content: space-between;
+                    .message{
+                        width: 60%;
+                        form{
+                            input{
+                                width: 45%;
+                                float: left;
+                                height: 30px;
+                                border-radius: 5px;
+                                padding: 0;
+                                border-width: 0;
+                                background: #e6e6e6;
+                                &::placeholder{
+                                    font-size: 10px;
+                                    padding-left: 40px;
+                                }
+                                &.right{
+                                    margin-left: 10%;
+                                }
+                                &.submit{
+                                    margin-top: 1.5em;
+                                    font-size: 10px;
+                                }
+                            }
+                            textarea{
+                                height: 200px;
+                                margin-top: 1.5em;
+                                &::placeholder{
+                                    font-size: 10px;
+                                    padding-left: 20px;
+                                    padding-top: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .contact-info{
+                        height: 300px;
+                        h4{
+                            margin-bottom: 1em;
+                            font-size: 1em;
+                        }
+                        p{
+                            margin-bottom: 1em;
+                            font-size: 0.6em;
+                        }
+                    }
+                }
+            }   
         }
         .subscribe{
-        
+            height: 300px;
             h3{
-                font-size: 30px;
+                font-size: 25px;
+                padding-top: 50px;
+                margin-bottom: 10px;
             }
-            
             p{
-                font-size: 15px;
-
+                padding-top: 10px;
+                font-size: 0.7em;
             }
             .to_subscribe{
-                button{
-                    font-size: 6px;
+                height: 30px;
+                padding-top: 20px;
+                input{
+                    &::placeholder{
+                        font-size: 10px;
+                        padding-left: 20px;
+                    }
                 }
-                input::placeholder{
+                button{
+                    width: 24%;
+                    letter-spacing: 0px;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    footer{
+        height: 100px;
+        margin-top: 2em; 
+        .container{
+            .rights{
+                p{
+                    color:#cdcdcd;
+                    margin-top: 40px;
                     font-size: 10px;
+                }
+            }
+            .images{
+                .links{
+                    a{ 
+                        img{
+                            margin-top: 40px;
+                            width: 15px;
+                            height: 15px;
+                            margin-left: 3%;
+                            border-radius: 20px;
+                            &:hover{
+                                background: #ff3f40;
+                            }
+                        }
+                    }
                 }
             }
         }

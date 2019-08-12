@@ -393,9 +393,14 @@ footer {
         width: 35%;
         margin: 0;
         margin-left: 65%; }
-        footer .container .images .links a {
-          margin-top: 35px;
-          margin-left: 9%; }
+        footer .container .images .links a img {
+          margin-top: 30px;
+          width: 30px;
+          height: 30px;
+          margin-left: 9%;
+          border-radius: 20px; }
+          footer .container .images .links a img:hover {
+            background: #ff3f40; }
 
 @media (max-width: 768px) {
   header .container nav {
@@ -449,13 +454,170 @@ footer {
       font-size: 0.7em; }
     main .container .side_right .second .right h3 {
       font-size: 1em; }
-  main .container .info .contact-info p {
-    font-size: small; }
-  main .subscribe h3 {
-    font-size: 30px; }
-  main .subscribe p {
-    font-size: 15px; }
-  main .subscribe .to_subscribe button {
-    font-size: 6px; }
-  main .subscribe .to_subscribe input::placeholder {
-    font-size: 10px; } }
+  main .container .products .header h3 {
+    font-size: 1.5em; }
+  main .container .products .header p {
+    font-size: 0.7em; }
+  main .container .products nav {
+    margin-top: 1.5em; }
+    main .container .products nav a {
+      padding: 9px 15px;
+      font-size: 0.7em; }
+  main .container .products .pictures {
+    text-align: center;
+    width: 100%; }
+    main .container .products .pictures div {
+      height: 250px; }
+  main .container .team .left-top h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: -5px; }
+  main .container .team .left-top p {
+    width: 35%;
+    margin-bottom: 15px;
+    font-size: 0.7em; }
+  main .container .team .left-top .line {
+    width: 11%;
+    height: 2px;
+    background: #ff3f40; }
+  main .container .team .main {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between; }
+    main .container .team .main .left-bottom {
+      width: 25%;
+      background: #f5f1de; }
+    main .container .team .main .right-bottom {
+      width: 70%; }
+      main .container .team .main .right-bottom h4 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+      main .container .team .main .right-bottom p {
+        width: 75%;
+        font-size: 0.7em; }
+      main .container .team .main .right-bottom nav {
+        margin-top: 1em;
+        margin-bottom: 1em; }
+        main .container .team .main .right-bottom nav a {
+          padding-right: 1em;
+          font-size: normal; }
+      main .container .team .main .right-bottom .pictures {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3.5em; }
+        main .container .team .main .right-bottom .pictures div {
+          width: 23%;
+          height: 180px;
+          background: #f5f1de; }
+        main .container .team .main .right-bottom .pictures .first {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end; }
+          main .container .team .main .right-bottom .pictures .first .text {
+            width: 100%;
+            height: 30px;
+            background: #7b796e;
+            color: #fff;
+            text-transform: uppercase;
+            vertical-align: middle; }
+            main .container .team .main .right-bottom .pictures .first .text p {
+              text-align: center;
+              width: 100%;
+              margin: 0 auto;
+              margin-top: 5px; }
+  main .container .info {
+    width: 100%;
+    margin-bottom: 1em; }
+    main .container .info .left_top {
+      width: 100%; }
+      main .container .info .left_top h3 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        margin-top: 1em; }
+      main .container .info .left_top p {
+        width: 60%;
+        margin-bottom: 1.5em;
+        letter-spacing: 1px;
+        font-size: 0.7em; }
+      main .container .info .left_top div {
+        width: 11%;
+        height: 2px;
+        background: #ff3f40; }
+    main .container .info .main-info {
+      width: 100%;
+      margin-top: 4em;
+      display: flex;
+      justify-content: space-between; }
+      main .container .info .main-info .message {
+        width: 60%; }
+        main .container .info .main-info .message form input {
+          width: 45%;
+          float: left;
+          height: 30px;
+          border-radius: 5px;
+          padding: 0;
+          border-width: 0;
+          background: #e6e6e6; }
+          main .container .info .main-info .message form input::placeholder {
+            font-size: 10px;
+            padding-left: 40px; }
+          main .container .info .main-info .message form input.right {
+            margin-left: 10%; }
+          main .container .info .main-info .message form input.submit {
+            margin-top: 1.5em;
+            font-size: 10px; }
+        main .container .info .main-info .message form textarea {
+          height: 200px;
+          margin-top: 1.5em; }
+          main .container .info .main-info .message form textarea::placeholder {
+            font-size: 10px;
+            padding-left: 20px;
+            padding-top: 15px; }
+      main .container .info .main-info .contact-info {
+        height: 300px; }
+        main .container .info .main-info .contact-info h4 {
+          margin-bottom: 1em;
+          font-size: 1em; }
+        main .container .info .main-info .contact-info p {
+          margin-bottom: 1em;
+          font-size: 0.6em; }
+  main .subscribe {
+    height: 300px; }
+    main .subscribe h3 {
+      font-size: 25px;
+      padding-top: 50px;
+      margin-bottom: 10px; }
+    main .subscribe p {
+      padding-top: 10px;
+      font-size: 0.7em; }
+    main .subscribe .to_subscribe {
+      height: 30px;
+      padding-top: 20px; }
+      main .subscribe .to_subscribe input::placeholder {
+        font-size: 10px;
+        padding-left: 20px; }
+      main .subscribe .to_subscribe button {
+        width: 24%;
+        letter-spacing: 0px;
+        font-size: 8px; }
+  footer {
+    height: 100px;
+    margin-top: 2em; }
+    footer .container .rights p {
+      color: #cdcdcd;
+      margin-top: 40px;
+      font-size: 10px; }
+    footer .container .images .links a img {
+      margin-top: 40px;
+      width: 15px;
+      height: 15px;
+      margin-left: 3%;
+      border-radius: 20px; }
+      footer .container .images .links a img:hover {
+        background: #ff3f40; } }
