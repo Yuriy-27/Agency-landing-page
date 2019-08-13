@@ -523,44 +523,127 @@ footer{
 }
 
 
-@media (max-width: 1050px) {
-//     header {
-//         .container{
-//             nav{
-                
-//                 .mobile {
-                    
-//                 }
-//                 a{
-                    
-//                 }
-    
-//             }
-//         }
-//         .block_left{
-//             h1 {
-//                 font-size: 2.5em;
-//             }
-//             p{
-//                 font-size: 0.7em;
-//             }
-//             button{
-//                 margin-bottom: 4em;
-//                 height: 3em;
-//             }
-//         }
-//         .block_right{
-//             .video{
-//                 height: 14em;
-//                 margin-top: 2em;
-//                 img{
-//                     margin-top: 5em;
-//                 }
-//             }
-//         }
-//     }
-}
+@media (min-width: 769px) and (max-width: 1050px) {
+    header{ 
+        .block_left{
+            width: 57%;
+            h1 {
+                font-size: 2.5em;
+            }
 
+            p{
+                font-size: 0.9em;
+            }
+
+            button {
+                height: 3em;
+            }
+        }
+        .block_right{
+            width: 43%;
+            
+            .video {
+                height: 18em;
+                img {
+                    margin-top: 7em;
+                }
+            }
+        }
+    }
+    
+    main {
+        .container{
+            .side_left{
+                width: 50%;
+                h2{
+                    font-size: 2.3em;
+                }
+                p{
+                    width: 90%;
+                }
+                button{
+                    height: 3em;
+                }  
+            }
+            .products{
+                .header{
+                    h3{
+                        font-size: 2.3em;
+                    }   
+                }
+            }
+            .team{
+                .left-top{
+                    h3{
+                        font-size: 2.3em;
+                    }
+                    p{
+                        width: 35%;
+                        margin-bottom: 30px;
+                    } 
+                }
+                .main{
+                    .right-bottom{
+                        h4{
+                            font-size: 1.7em;
+                        }
+                        p{
+                            font-size: 1em;
+                        }
+                    }
+                }   
+            }
+            .info{
+                .left_top{
+                    h3{
+                        font-size: 2.3em;   
+                    }
+                }
+                .main-info{
+                    .message{
+                        form{
+                            input{
+                                height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe{
+            h3{
+                font-size: 2.3em;
+            }
+            .to_subscribe{
+                height: 50px;
+                input{
+                    &::placeholder{
+                        font-size: 14px;
+                    }
+                }
+                button{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    footer{
+        .container{
+            .images{
+                .links{
+                    a{ 
+                        img{
+                            margin-top: 40px;
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 7%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 768px) {
     header {
@@ -599,6 +682,7 @@ footer{
             .video{
                 height: 14em;
                 margin-top: 1em;
+                margin-bottom: 1em;
                 img{
                     margin-top: 5em;
                 }

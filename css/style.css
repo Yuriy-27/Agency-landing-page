@@ -402,6 +402,58 @@ footer {
           footer .container .images .links a img:hover {
             background: #ff3f40; }
 
+@media (min-width: 769px) and (max-width: 1050px) {
+  header .block_left {
+    width: 57%; }
+    header .block_left h1 {
+      font-size: 2.5em; }
+    header .block_left p {
+      font-size: 0.9em; }
+    header .block_left button {
+      height: 3em; }
+  header .block_right {
+    width: 43%; }
+    header .block_right .video {
+      height: 18em; }
+      header .block_right .video img {
+        margin-top: 7em; }
+  main .container .side_left {
+    width: 50%; }
+    main .container .side_left h2 {
+      font-size: 2.3em; }
+    main .container .side_left p {
+      width: 90%; }
+    main .container .side_left button {
+      height: 3em; }
+  main .container .products .header h3 {
+    font-size: 2.3em; }
+  main .container .team .left-top h3 {
+    font-size: 2.3em; }
+  main .container .team .left-top p {
+    width: 35%;
+    margin-bottom: 30px; }
+  main .container .team .main .right-bottom h4 {
+    font-size: 1.7em; }
+  main .container .team .main .right-bottom p {
+    font-size: 1em; }
+  main .container .info .left_top h3 {
+    font-size: 2.3em; }
+  main .container .info .main-info .message form input {
+    height: 50px; }
+  main .subscribe h3 {
+    font-size: 2.3em; }
+  main .subscribe .to_subscribe {
+    height: 50px; }
+    main .subscribe .to_subscribe input::placeholder {
+      font-size: 14px; }
+    main .subscribe .to_subscribe button {
+      font-size: 10px; }
+  footer .container .images .links a img {
+    margin-top: 40px;
+    width: 20px;
+    height: 20px;
+    margin-left: 7%; } }
+
 @media (max-width: 768px) {
   header .container nav {
     flex-direction: column;
@@ -422,7 +474,8 @@ footer {
     font-size: 10px; }
   header .block_right .video {
     height: 14em;
-    margin-top: 1em; }
+    margin-top: 1em;
+    margin-bottom: 1em; }
     header .block_right .video img {
       margin-top: 5em; }
   main .container .side_left {
